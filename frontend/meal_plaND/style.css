@@ -1,0 +1,63 @@
+html, body {
+    
+font-size: 1.1em;
+        }
+
+.container {
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 20px;
+    padding: 20px;
+    
+}
+
+.btn {
+margin-top: auto;
+margin-left: auto;
+padding-left: auto;
+
+}
+
+.main__button--margin {
+    margin-left: 270px; 
+    margin-right: 5px;
+    padding-top: 10px
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.img-responsive {
+}
+
+\
+}
+
+div {
+    
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 100%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.col-md-6 {
+    text-align: center
+}

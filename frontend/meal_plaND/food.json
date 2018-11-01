@@ -1,0 +1,32 @@
+[
+	{
+		"name": "infused mexican rice",
+		"serving size": 21,
+		"classification": "entree",
+		"categorization": ["lunch", "dinner"],
+		"preferences": ["vegetarian", "vegan", "performance dining"],
+		"allergies" : ["wheat", "soy", "milk"],
+        "image": "https://images.unsplash.com/photo-1522803733288-80645f49342c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76d15c52e1a63f656cf8a6c401ed5f30&auto=format&fit=crop&w=2250&q=80"
+	},
+	{
+		"name": "tri-color rotini",
+		"serving size": 113, 
+		"calories": 169, 
+		"fat_calories": 14,
+		"total_fat": 1.5, 
+		"saturated_fat": 0, 
+		"trans_fat:": 0.00, 
+		"cholesterol": 0, 
+		"sodium": 0, 
+		"potassium": 0, 
+		"carbs": 34,
+		"dietary fiber": 2, 
+		"sugars": 2, 
+		"protein": 6,
+		"classification": "entree",
+		"categorization": ["lunch", "dinner"],
+		"preferences": ["vegetarian"],
+		"allergies" : ["wheat", "eggs"],
+        "image": "https://en.wikipedia.org/wiki/Pizza#/media/File:Eq_it-na_pizza-margherita_sep2005_sml.jpg"
+	}
+]
