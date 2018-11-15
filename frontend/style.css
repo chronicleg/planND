@@ -51,11 +51,11 @@ div {
 
 .circle {
     position: absolute;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 img {
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .col-md-6 {
@@ -66,4 +66,9 @@ img {
     border-style:solid;
     border-color: whitesmoke;
     
+}
+.circleimage {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
 }
