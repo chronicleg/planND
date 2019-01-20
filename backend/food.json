@@ -1,7 +1,7 @@
 [
 	{
 		"name": "infused mexican rice",
-		"serving size": 21,
+		"serving_size": 21,
 		"classification": "entree",
 		"categorization": ["lunch", "dinner"],
 		"preferences": ["vegetarian", "vegan", "performance dining"],
@@ -10,7 +10,7 @@
 	},
 	{
 		"name": "tri-color rotini",
-		"serving size": 113, 
+		"serving_size": 113, 
 		"calories": 169, 
 		"fat_calories": 14,
 		"total_fat": 1.5, 
