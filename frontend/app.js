@@ -20,8 +20,8 @@ MealModel.getById('aKHBUo6wGi').then(function(result){
     
 })
         
-MealModel.getAllAgencies().then(function(result){
-    console.log('all agencies result: ', result)
+MealModel.getAllMeals().then(function(result){
+    console.log('all meals result: ', result)
 })
     
     
@@ -66,7 +66,7 @@ var MealModel = function(Parse) {
     
         this.New = New;
         this.getById = getById;
-        this.getAllAgencies = getAllAgencies;
+        this.getAllMeals = getAllMeals;
 
     function New(obj) {
         if (angular.isUndefined(obj)) {
@@ -98,15 +98,17 @@ var MealModel = function(Parse) {
 //                return result
 //            })
 //    }
-    function getAllAgencies() {
-        return new this.Parse.Query(this.New()).find(agencies => {
-            agencies.forEach(agency =>
-                this.Parse.defineAttributes(agency, this.fields)
+    function getAllMeals() {
+        return new this.Parse.Query(this.New()).find(meals => {
+            meals.forEach(meal =>
+                this.Parse.defineAttributes(meal, this.fields)
             );
-            this.collection = agencies;
-            return Promise.resolve(agencies);
+            this.collection = meals;
+            return Promise.resolve(meals);
         }).catch(error => Promise.reject(error));
     }
+    
+    
 }
 
 MealModel.$inject = ['Parse']
