@@ -1,6 +1,7 @@
 // require 
 var fs = require('fs');
 var express = require('express');
+var Parse = require('parse/node');
 //define vars
 var food = fs.readFileSync('food.json');
 var app = express();

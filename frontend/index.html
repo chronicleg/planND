@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-us" ng-app="mealplaND">
+
 <head>
-  <title>PlaND Today</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- load angular via CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  <script src="app.js"></script>
+    <title>PlaND Today</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- load angular via CDN -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    
+    <script src="./node_modules/parse/dist/parse.min.js"></script>
+    
+    <script src="./node_modules/angular-parse/angular-parse.js"></script>
+    
+    
+    
+    
+    
+
+    <script src="app.js"></script>
 </head>
+
+
+
 <header>
+<<<<<<< Updated upstream
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
@@ -24,10 +44,28 @@
       </ul>
     </div>
   </nav>
+=======
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Testing</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="Testing2.htm"><i class="fa fa-Page2"></i> Testing2</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+>>>>>>> Stashed changes
 </header>
+
 <body>
-  <div class="container">
+
     <div ng-controller="mainController">
+<<<<<<< Updated upstream
       <h1>PlaND today...</h1>
       <div class="row">
         <div class="col-md-12" ng-repeat="item in items track by $index"> Low-Calorie Breakfast
@@ -62,25 +100,74 @@
             <div ng-repeat="allergy in item.allergies">
               <!--              adding item.-->
               {{ allergy }}
+=======
+
+        <div class="container">
+            <h1>PlaND today...</h1>
+            <div class="col-md-12" ng-repeat="item in items track by $index">
+                 <h2>
+                        {{ item.name }}
+                    </h2>
+                <div class="row">
+                    <img ng-src=" {{ item.image }} " class="img-fluid" alt="Responsive image">
+                </div>
+                <h2>
+                     {{ item.name }}
+                </h2>
+              <div class="um">  tags: {{ item.tags }}</div>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h3 class="mb-0">
+                                <span style="cursor: pointer;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="" aria-controls="collapseOne">
+                                    More Info (card doesn't work correctly right now)
+                                </span>
+                            </h3>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <h4>
+                                            allergies:
+                                            <div>
+                                                {{ item.allergies }}
+                                            </div>
+                                        </h4>
+                                        <h5>
+                                            preference:
+                                            <div ng-repeat="preference in item.preferences">
+                                                {{ preference }}
+                                            </div>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+>>>>>>> Stashed changes
             </div>
-          </h3>
-          <h4>
-            <span ng-repeat="preference in item.preferences">
-              {{ preference }}
-            </span>
-          </h4>
-          <h5>
-            <p ng-repeat="serving in item.serving_size">
-              {{ serving }}
-            </p>
-            {{ item.serving_size }}
-          </h5>
+
         </div>
+<<<<<<< Updated upstream
       </div>
     </div>
   </div>
 </div>
 </div>
 </div>
+=======
+
+    </div>
+
+>>>>>>> Stashed changes
 </body>
+
+
+
+
+
 </html>
